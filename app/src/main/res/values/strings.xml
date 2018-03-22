@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">LoanCollection</string>
+    <string name="action_logout">Log Out</string>
+    <string name="action_language">Languages</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_marathi">मराठी</string>
+    <string name="title_home">Home</string>
+    <string name="title_collection">Collection</string>
+    <string name="title_reports">Reports</string>
+    <string name="title_add_customer">Add Customer</string>
+    <string name="search_customer">Search Customer</string>
+    <string name="enter_file_number">Enter Agent ID</string>
+    <string name="file_number">Search Customer</string>
+    <string name="collection_submit">Submit</string>
+    <string name="customer_report">Customer Report</string>
+    <string name="reports">Reports</string>
+    <string name="agent_report">Agent Report</string>
+    <string name="go">Search</string>
+    <string name="file_number_report">File Number</string>
+    <string name="go_report">Search</string>
+    <string name="select_date">Select Date</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="agent_name">Agent Name:-</string>
+    <string name="agent_name_text">abc</string>
+    <string name="reports_main_menu">Reports</string>
+    <string name="add_customer">Add Customer</string>
+    <string name="account_number">Account No. :-</string>
+    <string name="loan_number">Loan No. :-</string>
+    <string name="collections">Collections</string>
+    <string name="wel_come">Wel-come:-</string>
+    <string name="collection_customer_name">Customer Name</string>
+    <string name="_123456">123456</string>
+    <string name="amount">Amount</string>
+    <string name="installment_amount">Installment Amount</string>
+    <string name="reason">Reason</string>
+    <string name="submit">Search</string>
+    <string name="date">Date</string>
+    <string name="agent_collected_amount">Collected Amount</string>
+    <string name="remaining_amount">Remaining Amount</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="customer_collected_amount">Collected Amount</string>
+    <string name="time">Time</string>
+    <string name="welcome_to">Welcome</string>
+    <string name="agent_login">Login</string>
+    <string name="login_id">Login ID</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+
+
+    <string name="loan_amount">Loan Amount:-</string>
+    <string name="collections_customer">Collections</string>
+    <string name="submit_collection">Submit</string>
+    <string name="reason_swipe">Reason</string>
+    <string name="installment_amount_card">Installment Amount</string>
+    <string name="installament_amount">Installment Amount</string>
+    <string name="address">Address:-</string>
+    <string name="account_number_collection">Account Number :-</string>
+    <string name="reason_collection">Reason</string>
+    <string name="account_number_reason">Account Number:-</string>
+    <string name="select_reason">Select Reason</string>
+    <string name="submit_reason_1">Submit</string>
+
+
+    <string name="name_collection">Name:-</string>
+    <string name="name_reason">Name:-</string>
+    <string name="rs">Rs:-</string>
+    <string name="rs_remaining">Rem.:-</string>
+    <string name="reason_card">Reason</string>
+    <string name="collection">Make\nPayment</string>
+    <string name="name">Name:-</string>
+    <string name="a_c_no">A/C:-</string>
+    <string name="loan_no">L.No:-</string>
+    <string name="loan_amt">Loan:-</string>
+    <string name="address_card">Address:-</string>
+
+
+    <string name="customer_name_report">Customer Name</string>
+    <string name="collected_amount_report">Collected Amount</string>
+    <string name="date_and_time">Date and Time</string>
+    <string name="date_report">Date</string>
+    <string name="collected_amount">Collected Amount</string>
+    <string name="remaining_amount_report">Remaining Amount</string>
+
+
+    <string name="runtime_permissions_txt">Please enable ALL permissions from app settings.</string>
+    <string name="submit_reason">Submit</string>
+    <string name="collect">Collect</string>
+    <string name="customer_account_number">Customer Account Number</string>
+    <string name="total_collection">Total Collection :-</string>
+
+
+    <string name="scanning">Searching...</string>
+    <string name="select_device">Select a device to connect</string>
+    <string name="newFolderButtonText">New folder</string>
+    <string name="newFolderDialogMessage">Create new folder</string>
+    <string name="createButtonText">Create</string>
+    <string name="folderCreationOk">Folder created successfully</string>
+    <string name="folderCreationError">Error while creating folder</string>
+    <string name="saveButtonText">Save</string>
+    <string name="enterFileName">Enter file name:</string>
+    <string name="cancelButtonText">Cancel</string>
+    <string name="cannotSaveFileMessage">Cannot save file</string>
+    <string name="accessDenied">Access denied</string>
+    <string name="missingFile">No such file</string>
+    <string name="loadButtonText">Load</string>
+    <string name="information">Information</string>
+    <string name="fileNameFirstMessage">Please enter the file name first</string>
+    <string name="okButtonText">OK</string>
+    <string name="action_logout_admin">admin_logout</string>
+</resources>

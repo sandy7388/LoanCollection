@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="05dp"
+    android:background="@color/colorGreen">
+
+    <RelativeLayout
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:id="@+id/relative_search_customer"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <EditText
+            android:imeOptions="actionDone"
+            android:drawableLeft="@drawable/search"
+            android:padding="05dp"
+            android:id="@+id/editText_search_customer_report"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edittextborder"
+            android:hint="@string/customer_account_number"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/button_search_customer_report"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="end"
+            android:background="@drawable/border_btn_layout"
+            android:text="@string/submit"
+            android:textColor="@color/colorGreen"
+            android:textSize="17dp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="03dp"
+        android:background="@drawable/border_line_table"
+        android:id="@+id/linear_transaction_details"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_below="@id/relative_search_customer">
+
+        <TextView
+            android:textColor="@color/colorGreen"
+            android:background="@drawable/border_1dp"
+            android:text="@string/date"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textColor="@color/colorGreen"
+            android:background="@drawable/border_1dp"
+            android:text="@string/collected_amount"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+
+        <TextView
+            android:textColor="@color/colorGreen"
+            android:background="@drawable/border_1dp"
+            android:text="@string/remaining_amount"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="3sp"
+        android:weightSum="7"
+        android:layout_below="@+id/linear_transaction_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_View"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:scrollbars="vertical">
+
+            </android.support.v7.widget.RecyclerView>
+        </ScrollView>
+
+        <LinearLayout
+            android:background="@drawable/border_line_table"
+            android:weightSum="3"
+            android:layout_marginTop="03sp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:textColor="@color/colorGreen"
+                android:gravity="center"
+                android:background="@drawable/border_1dp"
+                android:textSize="19dp"
+                android:layout_weight="2"
+                android:text="@string/total_collection"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:textColor="@color/colorGreen"
+                android:id="@+id/total_collection"
+                android:background="@drawable/border_1dp"
+                android:gravity="center"
+                android:textSize="19dp"
+                android:layout_weight="1"
+                android:text=""
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp"
+        android:layout_margin="02dp"
+        card_view:cardElevation="7dp"
+        card_view:cardMaxElevation="05dp">
+
+        <RelativeLayout
+            android:id="@+id/view_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_drawable">
+
+            <ImageView
+                android:visibility="gone"
+                android:src="@drawable/collection"
+                android:id="@+id/collection"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/undo_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/collection"
+                android:text="@string/reason"
+                android:textColor="#fff"
+                android:textSize="13dp" />
+
+            <ImageView
+                android:src="@drawable/collection"
+                android:id="@+id/reason"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_marginLeft="05dp"
+                android:id="@+id/undo_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/reason"
+                android:text="@string/collection"
+                android:textColor="#fff"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:background="@color/colorWhite"
+            android:id="@+id/view_foreground"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_margin="03dp"
+                    android:text="@string/name"
+                    android:textSize="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:layout_margin="03dp"
+                    android:id="@+id/text_customer_name_adapter"
+                    android:text="ABC"
+                    android:textSize="15dp"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit ="marquee_forever"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:scrollHorizontally="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="#3d846c" />
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="03dp"
+                        android:text="@string/a_c_no"
+                        android:textSize="17dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:layout_margin="03dp"
+                        android:id="@+id/text_customer_account_adapter"
+                        android:text="abc"
+                        android:textSize="15dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="#3d846c" />
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="03dp"
+                        android:text="@string/loan_no"
+                        android:textSize="17dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:layout_margin="03dp"
+                        android:id="@+id/text_customer_loan_number_adapter"
+                        android:text="abc"
+                        android:textSize="15dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#3d846c" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:layout_margin="03dp"
+                    android:text="@string/loan_amt"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_margin="03dp"
+                    android:id="@+id/text_customer_loan_amt_adapter"
+                    android:text="1000000"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="#3d846c" />
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_margin="03dp"
+                        android:layout_weight="1"
+                        android:text="@string/rs"
+                        android:textSize="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:layout_margin="03dp"
+                        android:layout_weight="1"
+                        android:id="@+id/text_collection_amount_adapter"
+                        android:text="10000"
+                        android:textSize="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="#3d846c" />
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_margin="03dp"
+                        android:layout_weight="1"
+                        android:text="@string/rs_remaining"
+                        android:textSize="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:layout_margin="03dp"
+                        android:layout_weight="1"
+                        android:id="@+id/text_remaining_amount_adapter"
+                        android:text="1000000"
+                        android:textSize="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#3d846c" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="03dp"
+                        android:text="@string/address"
+                        android:textSize="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:layout_margin="03dp"
+                        android:id="@+id/text_customer_address_adapter"
+                        android:text="Customer Address"
+                        android:textSize="15dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="#3d846c" />
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgView"
+                        android:src="@drawable/drag"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

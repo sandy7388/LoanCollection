@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.sandy.loancollection.activity.MainActivity">
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="@string/action_logout"
+        app:showAsAction="never" />
+    <!--<item
+        android:id="@+id/action_refresh"
+        android:orderInCategory="100"
+        android:title="@string/action_refresh"
+        app:showAsAction="never" />-->
+
+
+    <item android:title="@string/action_language">
+        <menu>
+            <item
+                android:id="@+id/action_marathi"
+                android:icon="@drawable/marathi"
+                android:title="@string/action_marathi" />
+
+            <item
+                android:id="@+id/action_english"
+                android:icon="@drawable/english"
+                android:title="English" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorGreen"
+    tools:context="com.example.sandy.loancollection.activity.ReasonActivity">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:background="@color/color_gray"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlack"
+            android:text="@string/reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="07dp"
+        android:layout_margin="05dp"
+        android:id="@+id/linear_customer_name"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/name"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+        <TextView
+            android:text="Customer Name"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/textView_customer_name_reason"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="07dp"
+        android:layout_margin="05dp"
+        android:id="@+id/linear_account_number"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_customer_name">
+
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:text="@string/account_number"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:text=" 123456"
+            android:id="@+id/textView_customer_number_reason"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="07dp"
+        android:layout_margin="05dp"
+        android:id="@+id/linear_loan_number"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_customer_name">
+
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:text="@string/loan_number"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:text=" 123456"
+            android:id="@+id/textView_loan_number_reason"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="07dp"
+        android:layout_margin="05dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent"
+        android:textColor="@android:color/background_light"
+        android:text="@string/select_reason"/>
+    <Spinner
+        android:autofillHints="Select Reason"
+        android:background="@drawable/edittextborder"
+        android:id="@+id/spinner_reason"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="35dp"/>
+    <Button
+        android:id="@+id/button_submit_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_btn_layout"
+        android:text="@string/submit_reason"
+        android:textSize="17dp"
+        android:textColor="@color/colorGreen"/>
+</LinearLayout>
+</LinearLayout>

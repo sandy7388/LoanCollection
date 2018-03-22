@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sandy.loancollection">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="locale|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.SearchCustomer"
+            android:configChanges="locale|orientation"
+            android:parentActivityName=".activity.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:configChanges="locale|orientation"
+                android:value=".activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.CustomerReportActivity"
+            android:configChanges="locale|orientation"
+            android:parentActivityName=".activity.ReportActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:configChanges="locale|orientation"
+                android:value=".activity.ReportActivity" />
+        </activity>
+        <activity
+            android:name=".activity.ReportActivity"
+            android:configChanges="locale|orientation"
+            android:parentActivityName=".activity.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.CollectionActivity"
+            android:configChanges="locale|orientation"
+            android:parentActivityName=".activity.SearchCustomer"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.SearchCustomer" />
+        </activity>
+        <activity
+            android:name=".activity.AgentReportActivity"
+            android:configChanges="locale|orientation"
+            android:parentActivityName=".activity.ReportActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.ReportActivity" />
+        </activity>
+        <activity
+            android:name=".activity.ReasonActivity"
+            android:configChanges="locale|orientation"
+            android:parentActivityName=".activity.SearchCustomer"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".activity.AdminActivity"
+            android:windowSoftInputMode="stateAlwaysHidden">
+
+        </activity>
+    </application>
+
+</manifest>

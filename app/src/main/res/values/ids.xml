@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="lnr_collections" type="id">collections</item>
+    <item name="lnr_add_customer" type="id">add_customer</item>
+    <item name="lnr_report" type="id">report</item>
+    <item name="action_logout_admin" type="id">logout_admin</item>
+</resources>

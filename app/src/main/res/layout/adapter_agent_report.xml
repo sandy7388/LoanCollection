@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@drawable/border_line_table"
+        android:id="@+id/linear_transaction_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_account_number"
+        android:layout_marginTop="03dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <TextView
+            android:textColor="@color/colorGreen"
+            android:id="@+id/textView_time_report"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border_1dp"
+            android:gravity="center"
+            android:text="@string/time"
+            android:textSize="17sp" />
+
+        <TextView
+            android:textColor="@color/colorGreen"
+            android:id="@+id/textView_cust_name_report"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border_1dp"
+            android:gravity="center"
+            android:text="@string/customer_name"
+            android:textSize="17sp" />
+
+        <TextView
+            android:textColor="@color/colorGreen"
+            android:id="@+id/textView_amount_report"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border_1dp"
+            android:gravity="center"
+            android:text="@string/agent_collected_amount"
+            android:textSize="17sp" />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

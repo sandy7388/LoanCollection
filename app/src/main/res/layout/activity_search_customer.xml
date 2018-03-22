@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGreen">
+<!--
+    <LinearLayout
+        android:padding="10dp"
+        android:background="@color/color_gray"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlack"
+            android:text="Search Customer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10sp"
+        android:text="Enter File Number"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textSize="25sp" />
+
+    <EditText
+        android:layout_marginTop="10sp"
+        android:id="@+id/editText_search_customer"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:background="@drawable/edittextborder"
+        android:hint=" File Number...."
+        android:inputType="number"/>
+
+        <Button
+            android:id="@+id/button_search_customer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_btn_layout"
+            android:text="Submit"
+            android:textSize="17dp"
+            android:textColor="@color/colorGreen"/>
+    </LinearLayout>-->
+</LinearLayout>

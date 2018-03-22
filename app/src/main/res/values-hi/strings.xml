@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ऋण संग्रह</string>
+    <string name="action_logout">लोग आउट</string>
+    <string name="action_language">भाषा</string>
+    <string name="title_home">होम</string>
+    <string name="title_collection">संग्रह</string>
+    <string name="title_reports">रिपोर्ट</string>
+    <string name="title_add_customer">ग्राहक जोड़ें</string>
+    <string name="search_customer">ग्राहक खोजें</string>
+    <string name="enter_file_number">फ़ाइल संख्या दर्ज करें</string>
+    <string name="file_number">एजेंट संख्या</string>
+    <string name="collection_submit">जमा करें</string>
+    <string name="customer_report">ग्राहक रिपोर्ट</string>
+    <string name="reports">रिपोर्ट...</string>
+    <string name="agent_report">एजेंट रिपोर्ट</string>
+    <string name="go">जमा करें</string>
+    <string name="file_number_report">फाइल संख्या</string>
+    <string name="go_report">जमा करें</string>
+    <string name="select_date">तारीख़ चुनें</string>
+    <string name="main_menu">मुख्य मेनू</string>
+    <string name="agent_name">एजेंट का नाम:-</string>
+    <string name="agent_name_text" ></string>
+    <string name="reports_main_menu">रिपोर्ट</string>
+    <string name="add_customer">ग्राहक जोड़ें</string>
+    <string name="account_number">खाता संख्या :-</string>
+    <string name="collections">संग्रह</string>
+    <string name="wel_come">स्वागत :-</string>
+    <string name="collection_customer_name">ग्राहक का नाम</string>
+    <string name="_123456">123456</string>
+    <string name="amount">रकम</string>
+    <string name="installment_amount">किस्त की राशि</string>
+    <string name="reason">कारण</string>
+    <string name="submit">जमा करें</string>
+    <string name="date">तारीख</string>
+    <string name="agent_collected_amount">संग्रहित राशि</string>
+    <string name="remaining_amount">शेष राशि</string>
+    <string name="customer_name">ग्राहक का नाम</string>
+    <string name="customer_collected_amount">संग्रहित राशि</string>
+    <string name="time">वेळ</string>
+
+
+    <string name="welcome_to">स्वागत.....</string>
+    <string name="agent_login">एजेंट लॉगिन</string>
+    <string name="login_id">लॉगिन आईडी</string>
+    <string name="password">पारण शब्द</string>
+    <string name="login">लॉग इन करें</string>
+
+
+</resources>

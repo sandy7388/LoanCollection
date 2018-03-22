@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGreen">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:background="@color/color_gray"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlack"
+            android:text="@string/collections"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="05dp"
+        android:id="@+id/linear_customer_name"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wel_come"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+        <TextView
+            android:text="@string/customer_name"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/textView_customer_name"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="05dp"
+        android:id="@+id/linear_account_number"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_customer_name">
+
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:text="@string/account_number"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:text="@string/_123456"
+            android:id="@+id/textView_customer_number"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:textSize="17dp"
+            android:textColor="@android:color/background_light"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="@string/amount"/>
+        <EditText
+            android:background="@drawable/edittextborder"
+            android:inputType="number"
+            android:hint="@string/installment_amount"
+            android:id="@+id/edt_amount"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="40dp"
+            />
+        <TextView
+            android:textSize="17dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/background_light"
+            android:text="@string/reason"/>
+        <Spinner
+            android:clickable="false"
+            android:background="@drawable/edittextborder"
+            android:id="@+id/spinner_reason"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/button_add_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_btn_layout"
+            android:text="@string/submit"
+            android:textSize="17dp"
+            android:textColor="@color/colorGreen"/>
+    </LinearLayout>
+
+</LinearLayout>
